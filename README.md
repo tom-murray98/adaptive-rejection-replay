@@ -1,6 +1,6 @@
-# Adaptive rejection replay
+# AS off-target replay
 
-Simulate 'earlier' adaptive sampling rejection from an existing ONT run, then compare methylation classification within the same sequencing time.
+Simulate 'earlier' adaptive sampling unblocking of off-target reads from an existing ONT run, then compare methylation classification within the same sequencing time.
 
 The package constructs **baseline**, **trim-only**, and **faster-rejection** BAMs, realigns them, restores retained modification tags, and runs SCARLET's Sturgeon, nanoDx and RapidCNS2 methylation branches. It supports Slurm submission and cleans validated intermediate files to reduce bulky file size.
 

@@ -1,0 +1,15 @@
+{
+  "sample": "example_sample_1h",
+  "bam": "/path/to/original.sorted.bam",
+  "summary": "/path/to/matching/sequencing_summary.txt.gz",
+  "ids": "/path/to/matching/unblocked_read_ids.txt.gz",
+  "reference": "/path/to/hg38.fa",
+  "workflow": "/path/to/extracted_methylation_workflow",
+  "outdir": "/path/to/new_experiment_1h",
+  "seconds": 3600,
+  "fixed_overhead": 0,
+  "threads": 16,
+  "memory_gb": 128,
+  "container": "graefox/scarlet:latest",
+  "cleanup": true
+}

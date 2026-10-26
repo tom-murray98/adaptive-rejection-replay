@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-rejection-replay"
+version = "0.1.0"
+description = "Paired fixed-time adaptive sampling replay with methylation classification"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["pysam>=0.22,<1"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Operating System :: POSIX :: Linux", "Topic :: Scientific/Engineering :: Bio-Informatics"]
+
+[project.scripts]
+as-replay = "asreplay.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
